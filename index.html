@@ -30,14 +30,22 @@
       </div>
     </div>
 
+    <!-- Start Screen -->
+     <div class="modal" id="startScreen" style="display: flex;">
+        <div class="modal-content">
+          <h2>Welcome to Bubble Game !</h2>
+          <p>Click the bubble that matches the 'Hit' number to score points. Try to get the highest score before time runs out!</p>
+          <button id="startBtn" class="modal-button">Start Game</button>
+        </div>
+     </div>
+
     <!-- Game over model -->
      <div id="gameOverModal" class="modal" style="display: none;">
         <div class="modal-content">
-
+          <div class="trophy">🏆</div>
           <h2>Game Over</h2>
           <p>Your Score : <span id="finalScore"></span></p>
-          <button id="restartBtn">Play Again</button>
-
+          <button id="restartBtn" class="modal-button">Play Again</button>
         </div>
      </div>
 

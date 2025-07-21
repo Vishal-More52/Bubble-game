@@ -3,12 +3,13 @@
 const gameOverModal = document.getElementById('gameOverModal');
 const finalScore = document.getElementById('finalScore');
 const restartBtn = document.getElementById('restartBtn');
-
+const startScreen = document.getElementById('startScreen')
+const startBtn = document.getElementById('startBtn');
 var timer;
 var score;
 var hitrn;
-var timerInt; // Make timerInt global
-var gameActive = false; // Track if the game is running
+var timerInt; 
+var gameActive = false; 
 
 function startGame() {
   timer = 60;
@@ -20,6 +21,11 @@ function startGame() {
   hitCount();
   gameActive = true;
 }
+
+startBtn.addEventListener('click',function(){
+  startScreen.style.display='none';
+  startGame()
+})
 
 function makeBubble() {
   let clutter = "";
@@ -64,6 +70,9 @@ document.querySelector('.pbtm').addEventListener('click', function (dets) {
   }
 });
 
+//start game
+
+
 // game over logic
 function endGame() {
   gameActive = false;
@@ -77,6 +86,4 @@ restartBtn.addEventListener('click', function () {
   startGame();
 });
 
-// Start the game automatically when the page loads
-window.addEventListener('DOMContentLoaded', startGame);
 
