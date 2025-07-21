@@ -99,7 +99,8 @@ html,body{
 }
 
 .modal-content{
-  background: #fff;
+  background: #fdfdfd;
+  border: 3px solid rgb(84, 104, 112);
   box-shadow: 0 4px 24px rgba(0,0,0,0.10);
   border-radius: 12px;
   padding: 2rem 1.5rem;
@@ -111,51 +112,49 @@ html,body{
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 18px;
+  gap: 12px;
 }
 
 .modal-content p {
   font-size: 0.9rem;
-  color: #555;
+  color: rgb(84, 104, 112);
   max-width: 80%;
   line-height: 1.4;
 }
 
 .modal-content .trophy {
-  display: none;
+  font-size: 2.5rem;
+  margin-bottom: -0.5rem;
 }
 
 .modal-content h2 {
-  font-size: 1.7rem;
-  color: #2d4a4a;
-  margin-bottom: 0.5rem;
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: rgb(84, 104, 112);
+  margin-bottom: 0;
 }
 
 #finalScore {
-  font-size: 2rem;
-  font-weight: bold;
-  color: #3b7a57;
-}
-
-#restartBtn{
-  display: none;
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: rgb(69, 119, 139);
 }
 
 .modal-button {
   margin-top: 1rem;
-  padding: 0.6rem 1.5rem;
+  padding: 0.7rem 1.8rem;
   font-size: 1rem;
   cursor: pointer;
-  background: #e0f7fa;
+  background: rgb(84, 104, 112);
   border: none;
   border-radius: 6px;
-  color: #2d4a4a;
+  color: #fff;
   font-weight: 600;
-  box-shadow: 0 1px 4px rgba(44,82,97,0.07);
+  box-shadow: none;
   transition: background 0.2s;
 }
 
 .modal-button:hover{
-  background: #b2ebf2;
-  color: #3b7a57;
+  background: rgb(69, 119, 139);
+  color: #fff;
 }
