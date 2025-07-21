@@ -23,7 +23,7 @@ function startGame() {
 }
 
 startBtn.addEventListener('click',function(){
-  startScreen.style.display='none';
+  startScreen.style.display='none'
   startGame()
 })
 
