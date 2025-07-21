@@ -86,3 +86,45 @@ html,body{
 .bubble:hover{
   background: rgb(31, 75, 92);
 }
+
+/* game over model */
+.modal{
+  position: fixed;
+  top: 0;left: 0;right: 0;bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+ 
+
+}
+
+.modal-content{
+  background: #cfecb3;
+  padding: 2rem;
+  border-radius: 10px;
+  text-align: center;
+  width: 30%;
+  height: 40vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+#restartBtn{
+  margin-top: 1rem;
+  padding: 0.5rem 1.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  background: rgb(98, 213, 98);
+  border: none;
+ 
+
+}
+
+#restartBtn:hover{
+  background-color: rgb(69, 206, 69);
+}
